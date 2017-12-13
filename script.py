@@ -15,7 +15,7 @@ var=1
 #time.sleep(2)
 while(var<=3):
         time.sleep(2)
-        t=strip(tel.write("s GET_VARS_NAME %s NAME=LED%d_lvl\r\n"%(cpe_address,var))[-1])
+        t=tel.write("s GET_VARS_NAME %s NAME=LED%d_lvl\r\n"%(cpe_address,var))
 #       tel.read("LED%d_lvl"%var)
 #if int(t)==0:
         time.sleep(2)
